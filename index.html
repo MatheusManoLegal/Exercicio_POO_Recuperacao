@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de Cadastro</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <form id="registrationForm">
+      <div class="form-group">
+        <label for="fullName">Nome completo</label>
+        <input type="text" class="form-control" id="fullName" required>
+        <div class="invalid-feedback">Por favor, insira o nome completo.</div>
+      </div>
+      <div class="form-group">
+        <label for="cpf">CPF</label>
+        <input type="text" class="form-control" id="cpf" required>
+        <div class="invalid-feedback">Por favor, insira um CPF válido.</div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" required>
+        <div class="invalid-feedback">Por favor, insira um email válido.</div>
+      </div>
+      <div class="form-group">
+        <label for="password">Senha</label>
+        <input type="password" class="form-control" id="password" required>
+        <div class="invalid-feedback">A senha deve ter pelo menos 8 caracteres.</div>
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirmação de senha</label>
+        <input type="password" class="form-control" id="confirmPassword" required>
+        <div class="invalid-feedback">As senhas não correspondem.</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
+    <div id="successMessage" class="mt-3" style="display: none;">
+      <div class="alert alert-success" role="alert">
+        Formulário enviado com sucesso!
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
